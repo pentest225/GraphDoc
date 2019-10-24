@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'graphene_django',
-    'api.apps.ApiConfig'
+    'api.apps.ApiConfig',
+    'django_admin_generator',
+    'django_seed',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -53,10 +56,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'graphApi.urls'
 
+GRAPHENE = {
+    'SCHEMA': 'graphApi.schema.schema'
+}
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
