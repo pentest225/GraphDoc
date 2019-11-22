@@ -9,14 +9,12 @@
         </div>
 
         <div class="row mt-5 align-items-center">
-       
-
             <div v-for="item in dataAllCategory" class="col-12 col-sm-10 col-md-8 col-md-8 m-auto col-lg-4 text-center pt-4 pt-lg-0">
                 <div class="fdb-box shadow pb-5 pt-5 pl-3 pr-3 fdb-touch rounded">
                 <h2 class="text-primary">Professional</h2>
             
                 <p class="h3 font-weight-light">${item.node.name}</p>
-                <p><a :href="item.node.id "  class="btn btn-primary mt-4">voir</a></p>
+                <p><a :href="item.node.id"  class="btn btn-primary mt-4">voir</a></p>
                 </div>
             </div>
 
@@ -25,3 +23,4 @@
     </section>
     {% endblock %}
     
+

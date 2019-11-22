@@ -17,7 +17,8 @@ from django.contrib import admin
 from django.urls import path,include
 from .import views
 urlpatterns = [
-    path('',views.index,name='index'),
+    # path('',views.index,name='index'),
+    path('',views.home,name='home'),
     path('cat/<str:pk>',views.cat,name='cat'),
     path('detail',views.detail,name='detail'),
     

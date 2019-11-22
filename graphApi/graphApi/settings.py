@@ -93,6 +93,9 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+SENDSMS_BACKEND = 'sendsms.backends.console.SmsBackend'
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
